@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExploreActivity">
+
+    <ImageView
+        android:id="@+id/background2_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background" />
+
+    <ImageView
+        android:id="@+id/imageguy_id"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toEndOf="@+id/imagedragon_id"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/guy" />
+
+    <ImageView
+        android:id="@+id/imageanime_id"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background2_id"
+        app:srcCompat="@drawable/anime" />
+
+    <ImageView
+        android:id="@+id/imagepanda_id"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toEndOf="@+id/imagehappy_id"
+        app:layout_constraintTop_toBottomOf="@+id/imageguy_id"
+        app:srcCompat="@drawable/panda" />
+
+    <ImageView
+        android:id="@+id/imagehappy_id"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagedragon_id"
+        app:srcCompat="@drawable/happy" />
+
+    <ImageView
+        android:id="@+id/imagedragon_id"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/imageanime_id"
+        app:layout_constraintTop_toBottomOf="@+id/usertitle_id"
+        app:srcCompat="@drawable/dragon" />
+
+    <ImageView
+        android:id="@+id/usertitle_id"
+        android:layout_width="366dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user" />
+
+    <TextView
+        android:id="@+id/textView_1"
+        android:layout_width="178dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="72dp"
+        android:text="Choose your Avatar"
+        android:textColor="#F2F2F2"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background2_id" />
+
+    <EditText
+        android:id="@+id/edittTextName_id"
+        android:layout_width="239dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Enter Your Name..."
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/background2_id"
+        app:layout_constraintTop_toBottomOf="@+id/imagehappy_id" />
+
+    <EditText
+        android:id="@+id/editTextBodyType_id"
+        android:layout_width="240dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="328dp"
+        android:ems="10"
+        android:hint="Enter Your BodyType..."
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittTextName_id" />
+
+    <EditText
+        android:id="@+id/editTextHairColor_id"
+        android:layout_width="240dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="272dp"
+        android:ems="10"
+        android:hint="Enter Your HairColor..."
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittTextName_id" />
+
+    <EditText
+        android:id="@+id/editTextEyeColor_id"
+        android:layout_width="240dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="220dp"
+        android:ems="10"
+        android:hint="Enter Your EyeColor..."
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittTextName_id" />
+
+    <EditText
+        android:id="@+id/editTextAge_id"
+        android:layout_width="240dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="168dp"
+        android:ems="10"
+        android:hint="Enter Your Age..."
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittTextName_id" />
+
+    <EditText
+        android:id="@+id/editTextWeight_id"
+        android:layout_width="240dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="116dp"
+        android:ems="10"
+        android:hint="Enter Your Weight..."
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittTextName_id" />
+
+    <EditText
+        android:id="@+id/editTextOcupation_id"
+        android:layout_width="240dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Enter Your Ocupation..."
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittTextName_id" />
+
+    <EditText
+        android:id="@+id/editTextHeight_id"
+        android:layout_width="240dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="Enter Your Height..."
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittTextName_id" />
+
+    <Button
+        android:id="@+id/buttonSave_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
